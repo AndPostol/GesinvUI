@@ -1,16 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { DropdownComponent } from '@shared/components/forms/dropdown/dropdown.component';
-import { DropDown } from '@shared/models/forms/dropDown.model';
+import { DropDown} from "@shared/models/forms/dropDown.model";
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-aside',
   standalone: true,
   imports: [DropdownComponent],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  templateUrl: './aside.component.html',
+  styleUrl: './aside.component.css'
 })
-export class HeaderComponent {
-    sections : DropDown = 
+export class AsideComponent {
+  sections : Array<DropDown> = [
       {
         title: "Home",
         items : [
@@ -26,5 +26,5 @@ export class HeaderComponent {
           }
         ]
       }
-    ; 
+  ]; 
 }
