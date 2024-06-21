@@ -9,7 +9,7 @@
     <ul class="items-center w-full" [class.hidden] = "toogleActive()" >
         @if(dropDown.items != undefined){
             @for(item of dropDown.items; track item){
-                <a href="{{item.url}}" class="w-full px-4 min-h-12 flex items-center   rounded-sm">
+                <a href="{{item.url}}" class="w-full px-4 min-h-12 flex items-center {{bgHover}} rounded-sm">
                     <span class="material-icons mr-2">{{item.icon}}</span>
                     <span class="w-full"> {{item.title}} </span>
                 </a>

@@ -1,5 +1,5 @@
 
-<div class="w-64 bg-gray-800 h-screen">
+<div class="w-64 bg-gray-800 min-h-screen h-full snap-y">
     <div class="flex items-center  min-h-16 px-4 border-b-2 border-white"> 
       <div class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center">
         <span class="text-white font-bold">A</span>
@@ -11,9 +11,9 @@
       <span class="text-white">Usuario X</span>
     </div>
     <nav>
-    <ul class="px-4">
+    <ul class="px-4 scroll-auto">
         @for(section of sections; track section){
-            <app-dropdown [dropDown]="section" class="text-white"></app-dropdown>
+            <app-dropdown [dropDown]="section" class="text-white" [bgHover]="'hover:bg-gray-700'"></app-dropdown>
         }
     </ul>
     </nav>

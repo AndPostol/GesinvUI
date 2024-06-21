@@ -11,6 +11,7 @@ import { DropDown } from '@shared/models/forms/dropDown.model';
 export class DropdownComponent {
   toogleActive = signal(true);
   @Input() dropDown!: DropDown;
+  @Input() bgHover!: string;
   toogleSubMenu(){
     this.toogleActive.update(prevState => !prevState);
   }
