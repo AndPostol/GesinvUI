@@ -1,7 +1,7 @@
 
 export interface DropDown {
     title: string;
-    items: Array<ItemDropDrown>
+    items?: Array<ItemDropDrown>
 }
 export interface ItemDropDrown{
     title: string;

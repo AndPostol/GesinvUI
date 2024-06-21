@@ -13,37 +13,8 @@
     <nav>
     <ul class="px-4">
         @for(section of sections; track section){
-            <app-dropdown [dropDown]="section" class="text-blue-700 hover:bg-gray-500"></app-dropdown>
+            <app-dropdown [dropDown]="section" class="text-white"></app-dropdown>
         }
-        
-        <li class="flex my-3 items-center text-gray-300 ">
-            <a href="#" class="w-full px-2 min-h-12 flex items-center text-gray-300 hover:bg-gray-500 rounded-sm">
-                <span class="material-icons mr-2">bar_chart</span>
-                <span class="w-full"> Ordenes de compra </span>
-                <span class="material-icons mr-2 justify-end">arrow_drop_down</span>
-            </a>
-        </li>
-        <li class="flex my-3 items-center text-gray-300 ">
-            <a href="#" class="w-full px-2 min-h-12 flex items-center text-gray-300 hover:bg-gray-500 rounded-sm">
-                <span class="material-icons mr-2">supervisor_account</span>
-                <span class="w-full"> Informes </span>
-                <span class="material-icons mr-2 justify-end">arrow_drop_down</span>
-            </a>
-        </li>
-        <li class="flex my-3 items-center text-gray-300 ">
-            <a href="#" class="w-full px-2 min-h-12 flex items-center text-gray-300 hover:bg-gray-500 rounded-sm">
-                <span class="material-icons mr-2">home</span>
-                <span class="w-full"> Proveedores </span>
-                <span class="material-icons mr-2 justify-end">arrow_drop_down</span>
-            </a>
-        </li>
-        <li class="flex my-3 items-center text-gray-300 ">
-            <a href="#" class="w-full px-2 min-h-12 flex items-center text-gray-300 hover:bg-gray-500 rounded-sm">
-                <span class="material-icons mr-2">local_shipping</span>
-                <span class="w-full"> Pedidos </span>
-                <span class="material-icons mr-2 justify-end">arrow_drop_down</span>
-            </a>
-        </li>
     </ul>
     </nav>
   </div>
