@@ -10,12 +10,12 @@
       <img  alt="User Image" class="rounded-full w-10 h-10 mr-2">
       <span class="text-white">Usuario X</span>
     </div>
-    <nav>
-    <ul class="px-4 scroll-auto">
-        @for(section of sections; track section){
-            <app-dropdown [dropDown]="section" class="text-white" [bgHover]="'hover:bg-gray-700'"></app-dropdown>
-        }
-    </ul>
+    <nav class="pb-10 pt-3">
+      <ul class="px-4 scroll-auto">
+          @for(section of sections; track section){
+              <app-dropdown [dropDown]="section" class="text-white cursor-pointer" [bgHover]="'hover:bg-gray-700'"></app-dropdown>
+          }
+      </ul>
     </nav>
   </div>
   
