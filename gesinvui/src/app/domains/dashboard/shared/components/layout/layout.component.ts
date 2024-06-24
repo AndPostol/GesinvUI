@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AsideComponent } from '../aside/aside.component';
 import { HeaderComponent } from '../header/header.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-layout',
@@ -11,11 +12,17 @@ import { HeaderComponent } from '../header/header.component';
     CommonModule, 
     RouterModule, 
     AsideComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.css'
 })
 export class LayoutComponent {
+  
+  aside = signal(false);
 
+  toogleMenu(event: any){
+   this.aside.update(prevState => !prevState); 
+  }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { DropdownComponent } from '@shared/components/forms/dropdown/dropdown.component';
 import { DropDown } from '@shared/models/forms/dropDown.model';
 
@@ -10,21 +10,10 @@ import { DropDown } from '@shared/models/forms/dropDown.model';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-    sections : DropDown = 
-      {
-        title: "Home",
-        items : [
-          {
-            title: "Prueba 1",
-            icon: "local_shipping",
-            url : "#"
-          },
-          {
-            title: "Prueba 2",
-            icon: "local_shipping",
-            url : "#"
-          }
-        ]
-      }
-    ; 
+  @Input() statusAside!: boolean;
+  @Output() buttonMenu = new EventEmitter();
+
+  clickMenu(){
+    this.buttonMenu.emit();
+  }
 }
