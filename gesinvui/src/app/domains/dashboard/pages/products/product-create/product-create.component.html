@@ -1,0 +1,99 @@
+<div class="max-w-5xl mx-auto p-6 bg-white shadow-md rounded-md">
+    <h1 class="text-2xl font-semibold mb-6">Crear Producto</h1>
+    <form>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+                <label class="block text-gray-700">Nombre</label>
+                <input type="text" class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+            </div>
+            <div>
+                <label class="block text-gray-700">Precio</label>
+                <input type="text" class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+            </div>
+            <div>
+                <label class="block text-gray-700">Marca</label>
+                <select class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+                    <option>Abbott</option>
+                    <!-- otras opciones -->
+                </select>
+            </div>
+            <div>
+                <label class="block text-gray-700">Medida</label>
+                <select class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+                    <option>Metro</option>
+                    <!-- otras opciones -->
+                </select>
+            </div>
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+                <label class="block text-gray-700">Línea</label>
+                <select class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+                    <option>Genérico</option>
+                    <!-- otras opciones -->
+                </select>
+            </div>
+            <div>
+                <label class="block text-gray-700">Tipo</label>
+                <select class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+                    <option>Papelería</option>
+                    <!-- otras opciones -->
+                </select>
+            </div>
+            <div>
+                <label class="block text-gray-700">Grupo</label>
+                <select class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+                    <option>Genérico</option>
+                    <!-- otras opciones -->
+                </select>
+            </div>
+        </div>
+
+        <div class="mt-6 flex items-center">
+            <input type="checkbox" class="mr-2">
+            <label class="text-gray-700">Activo</label>
+            <input type="checkbox" class="ml-6 mr-2">
+            <label class="text-gray-700">Iva</label>
+            <input type="checkbox" class="ml-6 mr-2">
+            <label class="text-gray-700">Perecible</label>
+        </div>
+
+        <div class="mt-6">
+            <label class="block text-gray-700">Caducidad</label>
+            <input type="date" class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+        </div>
+
+        <div class="mt-6">
+            <label class="block text-gray-700">Comentario</label>
+            <textarea class="mt-1 p-2 block w-full border border-gray-300 rounded-md" rows="4"></textarea>
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+                <label class="block text-gray-700">Unidad</label>
+                <input type="text" class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+            </div>
+            <div>
+                <label class="block text-gray-700">Caja</label>
+                <input type="text" class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+            </div>
+        </div>
+
+        <div class="mt-6">
+            <label class="block text-gray-700">Color</label>
+            <select class="mt-1 p-2 block w-full border border-gray-300 rounded-md">
+                <option>Violeta</option>
+                <option>Amarillo</option>
+                <option>Azul</option>
+                <option>Naranja</option>
+                <!-- otras opciones -->
+            </select>
+        </div>
+
+        <div class="mt-6 flex justify-between">
+            <button type="button" class="bg-teal-500 text-white px-4 py-2 rounded-md">Volver a la lista</button>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Registrar</button>
+        </div>
+    </form>
+</div>
